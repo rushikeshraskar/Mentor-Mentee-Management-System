@@ -1,0 +1,19 @@
+
+ .QuestionBank{
+  	width: 1000px;
+	
+	text-align: center;
+	background-color: rgba(52,73,94,0.9);
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 30px;
+	color:white;
+  }
+  .top_desk
+  {
+  color:white;	
+  font-size: 20px;
+  padding: 10px	;
+  	background-color: rgb(52,73,94);
+  }
+ 

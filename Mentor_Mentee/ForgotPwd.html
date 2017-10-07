@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Set New Password</title>
+		<meta charset="UTF-8">
+		<script src="Script/jquery.min.js"></script>
+  	<script src="Script/bootstrap.min.js"></script>
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style3.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style4.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style5.css"/>
+	<script type="text/javascript" src="Script/forgot.js"></script>
+	</head>
+	<body>
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Mentor Mentee Management System</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Log In</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+	
+		<div  class="myContainer">
+		
+        	<form>
+					<table align="center" class="tblBody">
+							<caption class="Header"> Recover Your Account </caption>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="uname" id="uname" required autofocus></td>
+				<td><span id="uname_msg" style="display:none;" class="myAlert">
+					</span></td>
+			</tr>
+			<tr>
+				<td>Account Type</td>
+				<td>
+				<select id="cat" class="cat" onchange="masterField(this.value);">
+					<option value="studenttbl">Student</option>
+					<option value="teachertbl">Teacher</option>
+					<option value="hodtbl">HOD</option>
+				</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Security Question</td>
+				<td id="ques"></td>
+				<td><input type="button" value="Get Question" onclick="getQues(uname.value,cat.value)" class="btn" ></td>
+			</tr>
+
+			<tr>
+				<td>Answer</td>
+				<td><input type="text" id="ans" required></td>
+				<td><span id="ans_msg" style="display:none;" class="myAlert">Info
+					<a onclick="ans_msg.style.display='none';" href="#">x</a>
+					</span></td>
+			</tr>
+    
+			<tr>
+				<td>New Password</td>
+				<td><input type="password"  id="pass" name="pword" required></td>
+				<td><span id="pwd1_msg" style="display:none;" class="myAlert">Info
+					<a onclick="pwd1_msg.style.display='none';" href="#">x</a>
+					</span></td>
+			</tr>
+
+			<tr>
+				<td>Re-enter Password</td>
+				<td><input type="password"  id="re" name="repword" required></td>
+				<td><span id="pwd2_msg" style="display:none;" class="myAlert">Info
+					<a onclick="pwd2_msg.style.display='none';" href="#">x</a>
+					</span></td>
+			</tr>
+
+		<tr id="master_field">
+			<td> Enter Master Password</td>
+			 <td><input type="password" id="pwdMaster" name="pwdMaster" required></td>
+			 <td><span id="pwdMaster_msg" style="display:none;" class="myAlert">Info
+					<a onclick="pwd2_msg.style.display='none';" href="#">x</a>
+					</span></td>
+		</tr>
+
+			<tr>
+				<td><input type="Button" onclick="sub(uname,ques,ans,pass,re,pwdMaster,cat.value)" value="Submit" class="btn"></td>
+				<td><input type="reset"  onclick="ques.innerHTML=' '" value="Clear" class="btn"></td>
+			</tr>
+					</table> 
+            </form>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+ .myContainer
+ {
+ 	width: 800px;
+ }
+ option , select{  
+	border-radius: 4px;
+	border:1px solid green;
+	height: 40px;
+	text-align: center;
+}
+#uname_msg,#ans_msg,#pwd1_msg,#pwd2_msg
+{
+	
+}
+#master_field
+{
+	visibility: hidden;
+}

@@ -1,0 +1,29 @@
+ .signUpDiv{
+  	width: 600px;
+	text-align: center;
+	background-color: rgba(52,73,94,0.9);
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 30px;
+	color:white;
+  margin-bottom: 100px;
+  padding-bottom: 10px;
+  } 
+  caption{
+      font-family: "Cambria";
+      font-size: 35px;
+  }
+
+td{
+      font-family: "Cambria";
+      font-size: 22px;
+      color:white;
+  } 
+select,option
+{
+  color:black;
+}
+input
+{
+  color:black;
+}

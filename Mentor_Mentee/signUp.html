@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<title>Sign Up</title>
+		<script src="Script/jquery.min.js"></script>
+  	<script src="Script/bootstrap.min.js"></script>
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style3.css">
+  		<script type="text/javascript" src="Script/signUp.js"></script>
+		<script type="text/javascript">table="studenttbl";</script>  
+
+	</head>
+	<body>
+	
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Mentor Mentee Management System</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Log In</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+
+ 	
+		<div class="signUpDiv">
+		<form method="POST" action="index.html" form="form1"  onSubmit="return validate(fname,phone,uname ,pass ,re ,secret ,ans,_CLASS.value)">
+
+		<table align="center" class="tblBody">
+	<caption> Student Registeration</caption>
+		<tr>
+		<td>Name</td>
+		<td><input type="text" id="fname" name="fname" placeholder="First Name and Surname" autofocus required></td>		
+		</tr>
+
+		<tr>
+		<td>Username </td>
+		<td><input type="text" id="uname" name="uname" onfocusout="unameChk(this)" onchange="unameChk(this)" required></td>
+            <td><div id="chk" style="display: none;"></div></td>
+		</tr> 
+		
+		<tr>
+		<td>Password</td>
+		<td><input type="password"  id="pass" name="pword" required></td>
+		</tr>
+
+		<tr>
+		<td>Re-enter Password</td>
+		<td><input type="password"  id="re" name="repword" required></td>
+		</tr>
+ 
+		<tr>
+		<td>Select Class</td>
+		<td>
+		<select class="_CLASS" id="_CLASS">
+			<option value="MCA">MCA</option>
+			<option value="MBA">MBA</option>
+		</td>
+		</tr>
+
+		<tr>
+		<td>Phone</td>
+		<td><input type="number" id="phone" name="phone" maxlength="10" required></td>
+		</tr>
+
+		<tr>
+		<td>Secret Question</td>
+		<td><input type="text"  id="secret" name="ques" required></td>
+		</tr>
+
+		<tr>
+		<td>Answer</td>
+		<td><input type="text" id="ans" name="ans" required></td>
+		</tr>
+
+		<tr>
+		<td><input type="Submit" name="submit" value="Submit" class="btn" ></td>
+		<td><input type="Reset" name="cancel" value="Clear" class="btn"></td>
+		</tr>
+
+		</table>
+	</form> 
+    
+    </div>
+    
+<footer>
+	<p>
+	System Developed by <a class="footer-text" href="#">Rushikesh and Nikita</a>
+	</p>
+</footer>
+	</body>
+</HTML>
